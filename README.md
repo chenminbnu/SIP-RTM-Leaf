@@ -1,6 +1,9 @@
 # SIP-RTM-Leaf
 ## Model Description
-    A leaf spectrum model that simulates leaf reflectance, transmittance and single scattering albedo with inputs of chlorophyll content, equivalent water thickness, dry matter content etc. The model is built following the spectral invariants theory, using two wavelength-independent leaf structural parameters, i.e., two spectrally invariant parameters (a photon recollision probability p and a scattering asymmetry parameter  q) to describe the leaf-scale radiatve transferring process. Detailed descriptions can be found in 
+    A leaf spectrum model that simulates leaf reflectance, transmittance and single scattering albedo with inputs of chlorophyll content, equivalent water thickness, dry matter content etc.
+    The model is built following the spectral invariants theory, using two wavelength-independent leaf structural parameters, i.e., two spectrally invariant parameters (a photon recollision probability p and a scattering asymmetry parameter  q) to describe the leaf-scale radiatve transferring process.
+    Detailed descriptions can be found in Wu S.,Zeng Y.,Hao D.,Liu Q.,Li J., Chen X.,R.Asrar G.,Yin G., Wen J., Yang B., Zhu P.,Chen M.,2020.Quantifying leaf optical properties with spectral invariants theory. DOI: https://doi.org/10.1016/j.rse.2020.112131
+
 
 ## File Description
     1. Please start with the SIP_Main.m, which is the main function and can display the output figures.  
