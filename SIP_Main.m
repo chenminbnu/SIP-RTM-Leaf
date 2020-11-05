@@ -43,10 +43,15 @@ Cw    = leaf_parameter(5); Cm    = leaf_parameter(6);
 
 LRT=SIP_Model(Cab,Car,Anth,Cbrown,Cw,Cm);
 
+fileID = fopen('leaf_spectrum.txt','w');
+fprintf(fileID,'Wavelength(nm)\tsingle scattering albedo\tReflectance\tTransmittance\n');
+fprintf(fileID,'%d\t%4.3f\t%4.3f\n',[ (400:2500)' LRT]);
+fclose(fileID);
 if plot
     
     % plot leaf single scattering albedo 
     figure;
+	subplot(121)
     scatter(LRT(:,1),LRT(:,2));
     xlim([400,2400]);
     xticks([400:400:2400]);
@@ -60,7 +65,7 @@ if plot
     set(gca,'LineWidth',1.2);
     
     % plot leaf reflectance
-    figure;
+	subplot(122)
     yyaxis left
     scatter(LRT(:,1),LRT(:,3));
     xlim([400,2400]);
