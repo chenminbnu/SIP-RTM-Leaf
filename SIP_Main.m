@@ -45,7 +45,7 @@ LRT=SIP_Model(Cab,Car,Anth,Cbrown,Cw,Cm);
 
 fileID = fopen('leaf_spectrum.txt','w');
 fprintf(fileID,'Wavelength(nm)\tsingle scattering albedo\tReflectance\tTransmittance\n');
-fprintf(fileID,'%d\t%4.3f\t%4.3f\n',[ (400:2500)' LRT]);
+fprintf(fileID,'%d\t%4.3f\t%4.3f\t%4.3f\n',[ (400:2500)' LRT]);
 fclose(fileID);
 if plot
     
